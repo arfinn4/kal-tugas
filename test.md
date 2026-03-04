@@ -1,1 +1,1 @@
-testtt anjay berhasil $2x + 4y$
+# Apa yang dimaksud persaamaan linear
