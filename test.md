@@ -128,7 +128,7 @@ $z=3$
 
 Maka nilai x = 2, nilai y = 3, dan nilai z = 3
 
-## 1.sistem persamaan linear
+## 1. sistem persamaan linear
 $\begin{aligned}
 x + y + z + u + v &= 15 \\
 2x + y + z + u + v &= 16 \\
@@ -136,3 +136,127 @@ x + 2y + z + u + v &= 16 \\
 x + y + 2z + u + v &= 17 \\
 x + y + z + 2u + v &= 19
 \end{aligned}$
+
+## 2. Matriks
+$\left[
+\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 15 \\
+2 & 1 & 1 & 1 & 1 & 16 \\
+1 & 2 & 1 & 1 & 1 & 16 \\
+1 & 1 & 2 & 1 & 1 & 17 \\
+1 & 1 & 1 & 2 & 1 & 19
+\end{array}
+\right]$
+
+# 3. Eliminasi Gauss
+## Langkah pertama
+hilangkan elemen dibawah pivot kolom pertama
+$$\begin{aligned}
+R_2 &\rightarrow R_2 - 2R_1 \\
+R_3 &\rightarrow R_3 - R_1 \\
+R_4 &\rightarrow R_4 - R_1 \\
+R_5 &\rightarrow R_5 - R_1
+\end{aligned}$$
+
+## Langkah Kedua
+Tukar baris pivot
+$R_2 \leftrightarrow R_3$
+$\left[
+\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 15 \\
+0 & 1 & 0 & 0 & 0 & 1 \\
+0 & -1 & -1 & -1 & -1 & -14 \\
+0 & 0 & 1 & 0 & 0 & 2 \\
+0 & 0 & 0 & 1 & 0 & 4
+\end{array}
+\right]$
+
+## Langkah ketiga
+hilangkan elemen dibawah pivot kedua
+$R_3 \rightarrow R_3 + R_2$
+
+$\left[
+\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 15 \\
+0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 0 & -1 & -1 & -1 & -13 \\
+0 & 0 & 1 & 0 & 0 & 2 \\
+0 & 0 & 0 & 1 & 0 & 4
+\end{array}
+\right]$
+
+## Langkah keempat
+hilangkan elemen kolom ketiga
+$R_3 \rightarrow -R_3$
+
+$\left[
+\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 15 \\
+0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 1 & 1 & 13 \\
+0 & 0 & 1 & 0 & 0 & 2 \\
+0 & 0 & 0 & 1 & 0 & 4
+\end{array}
+\right]$
+
+$R_4 \rightarrow R_4 - R_3$
+
+$\left[
+\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 15 \\
+0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 1 & 1 & 13 \\
+0 & 0 & 0 & -1 & -1 & -11 \\
+0 & 0 & 0 & 1 & 0 & 4
+\end{array}
+\right]$
+
+## Langkah kelima
+hilangkan elemen kolom keempat
+$R_4 \rightarrow -R_4$
+
+$\left[
+\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 15 \\
+0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 1 & 1 & 13 \\
+0 & 0 & 0 & 1 & 1 & 11 \\
+0 & 0 & 0 & 1 & 0 & 4
+\end{array}
+\right]$
+
+$R_5 \rightarrow R_5 - R_4$
+
+$\left[
+\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 15 \\
+0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 1 & 1 & 13 \\
+0 & 0 & 0 & 1 & 1 & 11 \\
+0 & 0 & 0 & 0 & -1 & -7
+\end{array}
+\right]$
+
+## Langkah keenam
+$R_5 \rightarrow -R_5$
+
+$\left[
+\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 15 \\
+0 & 1 & 0 & 0 & 0 & 2 \\
+0 & 0 & 1 & 0 & 0 & 3 \\
+0 & 0 & 0 & 1 & 0 & 4 \\
+0 & 0 & 0 & 0 & 1 & 5
+\end{array}
+\right]$
+
+# 4. Substitusi Balik
+$v=5$$$$
+$u=4$
+$z=3$
+$y=2$
+$x=1$
+
+# 5.kode sagecell
+![alt text](image-2.png)
+![alt text](image-3.png)
