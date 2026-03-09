@@ -257,12 +257,6 @@ $z=3$
 $y=2$
 $x=1$
 
-# 5.kode sagecell
-
-![alt text](image-2.png)
-
-![alt text](image-3.png)
-
 # Masukkan Code Di dalam
 <iframe src="https://sagecell.sagemath.org/" width="1000" height="750"></iframe>
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
