@@ -129,11 +129,14 @@ $z=3$
 Maka nilai x = 2, nilai y = 3, dan nilai z = 3
 
 ## 1. sistem persamaan linear
-$x_1 + x_2 + x_3 + x_4 + x_5 &= 15 
-2x_1 + x_2 + x_3 + x_4 + x_5 &= 16 
-x_1 + 2x_2 + x_3 + x_4 + x_5 &= 17 
-x_1 + x_2 + 2x_3 + x_4 + x_5 &= 18 
-x_1 + x_2 + x_3 + 2x_4 + x_5 &= 19$
+
+$\begin{aligned}
+x_1 + x_2 + x_3 + x_4 + x_5 &= 15 \\
+2x_1 + x_2 + x_3 + x_4 + x_5 &= 16 \\
+x_1 + 2x_2 + x_3 + x_4 + x_5 &= 17 \\
+x_1 + x_2 + 2x_3 + x_4 + x_5 &= 18 \\
+x_1 + x_2 + x_3 + 2x_4 + x_5 &= 19
+\end{aligned}$
 
 ## Matrik
 $\left[
