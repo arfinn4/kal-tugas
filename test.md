@@ -129,66 +129,148 @@ $z=3$
 Maka nilai x = 2, nilai y = 3, dan nilai z = 3
 
 ## 1. sistem persamaan linear
-$\begin{aligned}
-x + y + z + u + v &= 15 \\
-2x + y + z + u + v &= 16 \\
-x + 2y + z + u + v &= 16 \\
-x + y + 2z + u + v &= 17 \\
-x + y + z + 2u + v &= 19
-\end{aligned}$
+$x_1 + x_2 + x_3 + x_4 + x_5 &= 15 
+2x_1 + x_2 + x_3 + x_4 + x_5 &= 16 
+x_1 + 2x_2 + x_3 + x_4 + x_5 &= 17 
+x_1 + x_2 + 2x_3 + x_4 + x_5 &= 18 
+x_1 + x_2 + x_3 + 2x_4 + x_5 &= 19$
 
-## 2. Matriks
+## Matrik
 $\left[
 \begin{array}{ccccc|c}
-1 & 1 & 1 & 1 & 1 & 15 \\
-2 & 1 & 1 & 1 & 1 & 16 \\
-1 & 2 & 1 & 1 & 1 & 16 \\
-1 & 1 & 2 & 1 & 1 & 17 \\
-1 & 1 & 1 & 2 & 1 & 19
+1&1&1&1&1&15\\
+2&1&1&1&1&16\\
+1&2&1&1&1&17\\
+1&1&2&1&1&18\\
+1&1&1&2&1&19
 \end{array}
 \right]$
 
-# 3. Eliminasi Gauss
-## Langkah pertam Hilangkan elemen di bawah pivot kolom 1
-$
-\begin{aligned}
-R_2 &\leftarrow R_2 - 2R_1 \\
-R_3 &\leftarrow R_3 - R_1 \\
-R_4 &\leftarrow R_4 - R_1 \\
-R_5 &\leftarrow R_5 - R_1
-\end{aligned}
-$
+## Langkah pertama
+$R_2 \rightarrow R_2 - 2R_1$ \\
+$R_3 \rightarrow R_3 - R_1$ \\
+$R_4 \rightarrow R_4 - R_1$ \\
+$R_5 \rightarrow R_5 - R_1$
 
-## Langkah kedua Jadikan pivot kedua
-$
-R_2 \leftarrow -R_2
-$
-
-$
-\left[
+$\left[
 \begin{array}{ccccc|c}
-1 & 1 & 1 & 1 & 1 & 15 \\
-0 & 1 & 1 & 1 & 1 & 14 \\
-0 & 1 & 0 & 0 & 0 & 1 \\
-0 & 0 & 1 & 0 & 0 & 3 \\
-0 & 0 & 0 & 1 & 0 & 4
+1&1&1&1&1&15\\
+0&-1&-1&-1&-1&-14\\
+0&1&0&0&0&2\\
+0&0&1&0&0&3\\
+0&0&0&1&0&4
 \end{array}
-\right]
-$
+\right]$
 
-## Langkah ketiga Eliminasi kolom kedua
-$R_3 \gets R_3 - R_2$
+## Langkah kedua
 
-## Langkah empat Substitusi balik
-$\begin{align*}
-u &= 4 \\
-z &= 3 \\
-y &= 2 \\
-x &= 1 \\
-v &= 5
-\end{align*}$
+$R_2 \rightarrow -R_2$
 
+$\left[
+\begin{array}{ccccc|c}
+1&1&1&1&1&15\\
+0&1&1&1&1&14\\
+0&1&0&0&0&2\\
+0&0&1&0&0&3\\
+0&0&0&1&0&4
+\end{array}
+\right]$
 
+## Langkah ketiga
+
+$R_3 \rightarrow R_3 - R_2$
+
+$\left[
+\begin{array}{ccccc|c}
+1&1&1&1&1&15\\
+0&1&1&1&1&14\\
+0&0&-1&-1&-1&-12\\
+0&0&1&0&0&3\\
+0&0&0&1&0&4
+\end{array}
+\right]$
+
+## Langkah keempat
+
+$R_3 \rightarrow -R_3$
+
+$\left[
+\begin{array}{ccccc|c}
+1&1&1&1&1&15\\
+0&1&1&1&1&14\\
+0&0&1&1&1&12\\
+0&0&1&0&0&3\\
+0&0&0&1&0&4
+\end{array}
+\right]$
+
+## Langkah kelima
+
+$R_4 \rightarrow R_4 - R_3$
+
+$\left[
+\begin{array}{ccccc|c}
+1&1&1&1&1&15\\
+0&1&1&1&1&14\\
+0&0&1&1&1&12\\
+0&0&0&-1&-1&-9\\
+0&0&0&1&0&4
+\end{array}
+\right]$
+
+## Langkah keenam
+
+$R_4 \rightarrow -R_4$
+
+$\left[
+\begin{array}{ccccc|c}
+1&1&1&1&1&15\\
+0&1&1&1&1&14\\
+0&0&1&1&1&12\\
+0&0&0&1&1&9\\
+0&0&0&1&0&4
+\end{array}
+\right]$
+
+## Langkah ketujuh
+
+$R_5 \rightarrow R_5 - R_4$
+
+$\left[
+\begin{array}{ccccc|c}
+1&1&1&1&1&15\\
+0&1&1&1&1&14\\
+0&0&1&1&1&12\\
+0&0&0&1&1&9\\
+0&0&0&0&-1&-5
+\end{array}
+\right]$
+
+## Langkah kedelapan
+
+$R_5 \rightarrow -R_5$
+
+$\left[
+\begin{array}{ccccc|c}
+1&1&1&1&1&15\\
+0&1&1&1&1&14\\
+0&0&1&1&1&12\\
+0&0&0&1&1&9\\
+0&0&0&0&1&5
+\end{array}
+\right]$
+
+## Substitusi Mundur
+
+$\begin{align}
+x_5 &= 5 \\
+x_4 + x_5 &= 9 \Rightarrow x_4 = 4 \\
+x_3 + x_4 + x_5 &= 12 \Rightarrow x_3 = 3 \\
+x_2 + x_3 + x_4 + x_5 &= 14 \Rightarrow x_2 = 2 \\
+x_1 + x_2 + x_3 + x_4 + x_5 &= 15 \Rightarrow x_1 = 1
+\end{align}$
+
+$(x_1,x_2,x_3,x_4,x_5) = (1,2,3,4,5)$
 
 # Masukkan Code Di dalam
 <iframe src="https://sagecell.sagemath.org/" width="1000" height="750"></iframe>
