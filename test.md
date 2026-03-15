@@ -260,13 +260,6 @@ $\left[
 \end{array}
 \right]$
 
-## Substitusi Mundur
-$x_5 &= 5 
-x_4 + x_5 &= 9  x_4 = 4 
-x_3 + x_4 + x_5 &= 12 x_3 = 3 
-x_2 + x_3 + x_4 + x_5 &= 14 x_2 = 2 
-x_1 + x_2 + x_3 + x_4 + x_5 &= 15 x_1 = 1$
-
 $(x_1,x_2,x_3,x_4,x_5) = (1,2,3,4,5)$
 
 # Masukkan Code Di dalam
