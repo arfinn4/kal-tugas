@@ -149,7 +149,45 @@ $\left[
 \right]$
 
 # 3. Eliminasi Gauss
-## Langkah pertama
+## Langkah pertam Hilangkan elemen di bawah pivot kolom 1
+$
+\begin{aligned}
+R_2 &\leftarrow R_2 - 2R_1 \\
+R_3 &\leftarrow R_3 - R_1 \\
+R_4 &\leftarrow R_4 - R_1 \\
+R_5 &\leftarrow R_5 - R_1
+\end{aligned}
+$
+
+## Langkah kedua Jadikan pivot kedua
+$
+R_2 \leftarrow -R_2
+$
+
+$
+\left[
+\begin{array}{ccccc|c}
+1 & 1 & 1 & 1 & 1 & 15 \\
+0 & 1 & 1 & 1 & 1 & 14 \\
+0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0 & 0 & 3 \\
+0 & 0 & 0 & 1 & 0 & 4
+\end{array}
+\right]
+$
+
+## Langkah ketiga Eliminasi kolom kedua
+$R_3 \gets R_3 - R_2$
+
+## Langkah empat Substitusi balik
+$\begin{align*}
+u &= 4 \\
+z &= 3 \\
+y &= 2 \\
+x &= 1 \\
+v &= 5
+\end{align*}$
+
 
 
 # Masukkan Code Di dalam
