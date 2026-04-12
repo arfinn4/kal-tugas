@@ -298,16 +298,16 @@ $C_{ij} = (-1)^{i+j} M_{ij}$
 $M_{ij} = \text{determinan matriks } 4 \times 4 \text{ hasil hapus baris } i \text{ kolom } j$
 
 Contoh Kofaktor: 
-$C_{11} = (+1)\cdot
-\begin{vmatrix}
+$C_{11} = (+1)$
+$\begin{vmatrix}
 g & h & i & j \\
 l & m & n & o \\
 q & r & s & t \\
 v & w & x & y
 \end{vmatrix}$
 
-$C_{12} = (-1)\cdot
-\begin{vmatrix}
+$C_{12} = (-1)$
+$\begin{vmatrix}
 f & h & i & j \\
 k & m & n & o \\
 p & r & s & t \\
@@ -315,7 +315,7 @@ u & w & x & y
 \end{vmatrix}$
 
 # 3. Bentuk matriks kofaktor:
-$\text{Cof}(A) =
+${Cof}(A) =
 \begin{bmatrix}
 C_{11} & C_{12} & C_{13} & C_{14} & C_{15} \\
 C_{21} & C_{22} & C_{23} & C_{24} & C_{25} \\
@@ -364,8 +364,8 @@ ${adj}(A) = \begin{bmatrix}
 -3 & 1
 \end{bmatrix}$
 
-$A^{-1} = \frac{1}{-2}
-\begin{bmatrix}
+$A^{-1} = \frac{1}{-2}$
+$\begin{bmatrix}
 4 & -2 \\
 -3 & 1
 \end{bmatrix}$
