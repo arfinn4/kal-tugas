@@ -281,14 +281,14 @@ sagecell.makeSagecell({inputLocation: '.sagecell'});
 </script>
 
 # 1. Matriks A (5×5)
-\A =
+$A =
 \begin{bmatrix}
 a & b & c & d & e \\
 f & g & h & i & j \\
 k & l & m & n & o \\
 p & q & r & s & t \\
 u & v & w & x & y
-\end{bmatrix}\
+\end{bmatrix}$
 
 
 # 2. Determinan Matriks 5×5
@@ -355,16 +355,16 @@ Gunakan: $A^{-1} = \frac{1}{\det(A)} \cdot \operatorname{adj}(A)$
 $A = \begin{bmatrix}
 1 & 2 \\
 3 & 4
-\end{bmatrix}
+\end{bmatrix}$
 
-\det(A) = (1)(4) - (2)(3) = -2
+$det(A) = (1)(4) - (2)(3) = -2$
 
-\operatorname{adj}(A) = \begin{bmatrix}
+$operatorname{adj}(A) = \begin{bmatrix}
 4 & -2 \\
 -3 & 1
-\end{bmatrix}
+\end{bmatrix}$
 
-A^{-1} = \frac{1}{-2}
+$A^{-1} = \frac{1}{-2}
 \begin{bmatrix}
 4 & -2 \\
 -3 & 1
