@@ -288,4 +288,38 @@ f & g & h & i & j \\
 k & l & m & n & o \\
 p & q & r & s & t \\
 u & v & w & x & y
-\end{bmatrix}\$
+\end{bmatrix}\
+
+
+# 2. Determinan Matriks 5×5
+ekspansi baris pertama: $det(A) = aC_{11} - bC_{12} + cC_{13} - dC_{14} + eC_{15}$
+
+$C_{ij} = (-1)^{i+j} M_{ij}$
+$M_{ij} = \text{determinan matriks } 4 \times 4 \text{ hasil hapus baris } i \text{ kolom } j$
+
+# 3. Adjoin Matriks (adj A)
+Adjoint adalah: adj(A)=(matriks kofaktor)T
+
+## langkah :
+1. Hitung semua kofaktor $ C_{ij}$ 
+ $C_{ij} = (-1)^{i+j} M_{ij}$
+
+2. Bentuk matriks kofaktor:
+$\text{Cof}(A) =
+\begin{bmatrix}
+C_{11} & C_{12} & C_{13} & C_{14} & C_{15} \\
+C_{21} & C_{22} & C_{23} & C_{24} & C_{25} \\
+C_{31} & C_{32} & C_{33} & C_{34} & C_{35} \\
+C_{41} & C_{42} & C_{43} & C_{44} & C_{45} \\
+C_{51} & C_{52} & C_{53} & C_{54} & C_{55}
+\end{bmatrix}$
+
+3. Transpose:
+$\operatorname{adj}(A) =
+\begin{bmatrix}
+C_{11} & C_{21} & C_{31} & C_{41} & C_{51} \\
+C_{12} & C_{22} & C_{32} & C_{42} & C_{52} \\
+C_{13} & C_{23} & C_{33} & C_{43} & C_{53} \\
+C_{14} & C_{24} & C_{34} & C_{44} & C_{54} \\
+C_{15} & C_{25} & C_{35} & C_{45} & C_{55}
+\end{bmatrix}$
