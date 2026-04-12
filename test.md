@@ -297,7 +297,8 @@ ekspansi baris pertama: $det(A) = aC_{11} - bC_{12} + cC_{13} - dC_{14} + eC_{15
 $C_{ij} = (-1)^{i+j} M_{ij}$
 $M_{ij} = \text{determinan matriks } 4 \times 4 \text{ hasil hapus baris } i \text{ kolom } j$
 
-Contoh Kofaktor: 
+Contoh Kofaktor:
+ 
 $C_{11} = (+1)$
 $\begin{vmatrix}
 g & h & i & j \\
@@ -315,8 +316,8 @@ u & w & x & y
 \end{vmatrix}$
 
 # 3. Bentuk matriks kofaktor:
-${Cof}(A) =
-\begin{bmatrix}
+${Cof}(A) =$
+$\begin{bmatrix}
 C_{11} & C_{12} & C_{13} & C_{14} & C_{15} \\
 C_{21} & C_{22} & C_{23} & C_{24} & C_{25} \\
 C_{31} & C_{32} & C_{33} & C_{34} & C_{35} \\
