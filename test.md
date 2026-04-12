@@ -281,11 +281,11 @@ sagecell.makeSagecell({inputLocation: '.sagecell'});
 </script>
 
 # 1. Matriks A (5×5)
-$\[A =
+\A =
 \begin{bmatrix}
 a & b & c & d & e \\
 f & g & h & i & j \\
 k & l & m & n & o \\
 p & q & r & s & t \\
 u & v & w & x & y
-\end{bmatrix}\]$
+\end{bmatrix}\$
