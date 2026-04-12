@@ -281,8 +281,8 @@ sagecell.makeSagecell({inputLocation: '.sagecell'});
 </script>
 
 # 1. Matriks A (5×5)
-$A =
-\begin{bmatrix}
+A =
+$\begin{bmatrix}
 a & b & c & d & e \\
 f & g & h & i & j \\
 k & l & m & n & o \\
@@ -359,7 +359,7 @@ $A = \begin{bmatrix}
 
 $det(A) = (1)(4) - (2)(3) = -2$
 
-$operatorname{adj}(A) = \begin{bmatrix}
+${adj}(A) = \begin{bmatrix}
 4 & -2 \\
 -3 & 1
 \end{bmatrix}$
