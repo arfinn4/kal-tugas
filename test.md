@@ -329,8 +329,8 @@ setiap elemen : $C_{ij} = (-1)^{i+j} M_{ij}$
 
 # 4. Adjoin Matriks (adj A)
 Adjoin adalah transpose dari matriks kofaktor:
-$\operatorname{adj}(A) =
-\begin{bmatrix}
+${adj}(A) =$
+$\begin{bmatrix}
 C_{11} & C_{21} & C_{31} & C_{41} & C_{51} \\
 C_{12} & C_{22} & C_{32} & C_{42} & C_{52} \\
 C_{13} & C_{23} & C_{33} & C_{43} & C_{53} \\
