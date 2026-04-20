@@ -372,9 +372,59 @@ $\begin{bmatrix}
 \end{bmatrix}$
 
 # Soal determinan dan invers
-1. Hitunglah determinan matrik berikut dengan menggunakan rumus expansi baris
+A. Hitunglah determinan matrik berikut dengan menggunakan rumus expansi baris
+
 $\sum_{k=1}^n (-1)^{i+k} a_{ik} M_{ik}$
+
 dengan $M_{ij}$ adalah minior dari matrik A dan
+
 $M_{ij} = \det A_{ij}.$
+
 $A_{ij}$ adalah submatrik dengan menghapus baris i dan kolom kolom j dari matrix $A_{mxn}$ dengan $1 \le i, j \le n$
+
+1.$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
+
+2.$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
+
+3.$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.$
+
+B. Gunakan rumus matriks adjoin untuk menghitung invers dari matriks berikut dengan rumus
+
+$(\operatorname{adj} A)_{ij} = (-1)^{i+j} M_{ji}$
+
+dan
+
+$A^{-1} = \frac{1}{\det A} \operatorname{adj} A.$
+
+4.$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
+
+5.$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
+
+6.$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.$
+
+# jawaban 
+A
+1.Diketahui matriks: $A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
+hitung determinan menggunakan ekspansi baris (baris pertama):
+$\det(A) = \sum_{j=1}^{n} (-1)^{1+j} a_{1j} M_{1j}$
+
+Proses prosesnya :
+Ekspansi baris pertama: $\det(A) = (-7)\cdot M_{11} + (-1)^{1+2}(-5)\cdot M_{12}$
+1. Minor $M_{11}$
+Hapus baris 1 kolom 1: $M_{11} = [4] \;\Rightarrow\; \det = 4$
+
+2. Minor $M_{12}$
+Hapus baris 1 kolom 2: $M_{12} = [1] \;\Rightarrow\; \det = 1$
+
+Substitusi : 
+$\begin{aligned}
+\det(A) &= (-7)(4) - (-5)(1) \\
+        &= -28 + 5 \\
+        &= -23
+\end{aligned}$
+Hasil akhir : 
+	​
+
+	​
+
 
