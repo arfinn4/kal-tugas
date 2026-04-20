@@ -405,23 +405,30 @@ $A^{-1} = \frac{1}{\det A} \operatorname{adj} A.$
 # jawaban 
 A
 1.Diketahui matriks: $A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
+
 hitung determinan menggunakan ekspansi baris (baris pertama):
 $\det(A) = \sum_{j=1}^{n} (-1)^{1+j} a_{1j} M_{1j}$
 
 Proses prosesnya :
+
 Ekspansi baris pertama: $\det(A) = (-7)\cdot M_{11} + (-1)^{1+2}(-5)\cdot M_{12}$
+
 1. Minor $M_{11}$
+
 Hapus baris 1 kolom 1: $M_{11} = [4] \;\Rightarrow\; \det = 4$
 
 2. Minor $M_{12}$
+
 Hapus baris 1 kolom 2: $M_{12} = [1] \;\Rightarrow\; \det = 1$
 
-Substitusi : 
+Substitusi :
+
 $\begin{aligned}
 \det(A) &= (-7)(4) - (-5)(1) \\
         &= -28 + 5 \\
         &= -23
 \end{aligned}$
+
 Hasil akhir : 
 	​
 
