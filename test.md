@@ -406,7 +406,7 @@ $A^{-1} = \frac{1}{\det A} \operatorname{adj} A.$
 A
 1.Diketahui matriks: $A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
 
-hitung determinan menggunakan ekspansi baris (baris pertama):
+hitung determinan menggunakan rumus ekspansi baris (baris pertama):
 $\det(A) = \sum_{j=1}^{n} (-1)^{1+j} a_{1j} M_{1j}$
 
 Proses prosesnya :
@@ -414,11 +414,9 @@ Proses prosesnya :
 Ekspansi baris pertama: $\det(A) = (-7)\cdot M_{11} + (-1)^{1+2}(-5)\cdot M_{12}$
 
 1. Minor $M_{11}$
-
 Hapus baris 1 kolom 1: $M_{11} = [4] \;\Rightarrow\; \det = 4$
 
 2. Minor $M_{12}$
-
 Hapus baris 1 kolom 2: $M_{12} = [1] \;\Rightarrow\; \det = 1$
 
 Substitusi :
@@ -429,7 +427,50 @@ $\begin{aligned}
         &= -23
 \end{aligned}$
 
-Hasil akhir : 
+Hasilnya : $\det(A) &= -23$
+
+2.Diketahui matriks : $A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
+
+Langkah 1: Rumus ekspansi baris pertama
+
+$\det(A) = \sum_{k=1}^{3} (-1)^{1+k} \, a_{1k} \, M_{1k}$
+
+Baris pertama: (0,2,−3)
+
+Langkah 2: Hitung setiap sukunya
+Suku ke-1 (k = 1)
+$a^{11} = 0 \Rightarrow (-1)^{1+1} \cdot 0 \cdot M^{11} = 0$
+
+Suku ke-2 (k = 2)
+$a^{12}​=2$
+
+Minor M12: hapus baris 1 kolom 2
+$\begin{vmatrix}
+1 & -1 \\
+0 & 1
+\end{vmatrix}
+= (1)(1) - (-1)(0) = 1$
+$(-1)^{1+2} \cdot 2 \cdot 1 = (-1)^3 \cdot 2 = -2$
+
+Suku ke-3 (k = 3)
+$a^{13}​=-3$
+
+Minor M13: hapus baris 1 kolom 3
+$\begin{vmatrix}
+1 & -2 \\
+0 & 0
+\end{vmatrix}
+= (1)(0) - (-2)(0) = 0
+$
+$
+(-1)^{1+3} \cdot (-3) \cdot 0 = 0$
+
+Langkah 3: Jumlahkan semua
+$\det(A) = 0 - 2 + 0 = -2$
+
+Hasilnya = $\det(A) &= -2$
+
+
 	​
 
 	​
