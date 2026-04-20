@@ -427,7 +427,7 @@ $\begin{aligned}
         &= -23
 \end{aligned}$
 
-Hasilnya : $\det(A) &= -23$
+Hasilnya : $\det(A) = -23$
 
 2.Diketahui matriks : $A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
 
@@ -438,6 +438,7 @@ $\det(A) = \sum_{k=1}^{3} (-1)^{1+k} \, a_{1k} \, M_{1k}$
 Baris pertama: (0,2,−3)
 
 Langkah 2: Hitung setiap sukunya
+
 Suku ke-1 (k = 1)
 $a^{11} = 0 \Rightarrow (-1)^{1+1} \cdot 0 \cdot M^{11} = 0$
 
@@ -445,6 +446,7 @@ Suku ke-2 (k = 2)
 $a^{12}​=2$
 
 Minor M12: hapus baris 1 kolom 2
+
 $\begin{vmatrix}
 1 & -1 \\
 0 & 1
@@ -456,6 +458,7 @@ Suku ke-3 (k = 3)
 $a^{13}​=-3$
 
 Minor M13: hapus baris 1 kolom 3
+
 $\begin{vmatrix}
 1 & -2 \\
 0 & 0
@@ -466,9 +469,76 @@ $
 (-1)^{1+3} \cdot (-3) \cdot 0 = 0$
 
 Langkah 3: Jumlahkan semua
+
 $\det(A) = 0 - 2 + 0 = -2$
 
-Hasilnya = $\det(A) &= -2$
+Hasilnya = $\det(A) = -2$
+
+3.Diketahui matriks : $A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.$
+
+Langkah 1: Rumus ekspansi baris pertama
+
+$\det(A) = \sum_{k=1}^{4} (-1)^{1+k} \, a_{1k} \, M_{1k}$
+
+Langkah 2: Hitung setiap minor
+
+Minor M11
+Hapus baris 1 kolom 1:
+
+$\begin{vmatrix}
+1 & 1 & 1 \\
+1 & -3 & 1 \\
+1 & 1 & -3
+\end{vmatrix}$
+
+hitung :    =1((−3)(−3)−1⋅1)−1(1(−3)−1⋅1)+1(1⋅1−(−3)⋅1)
+            =1(9−1)−1(−3−1)+1(1+3)=8+4+4=16
+
+Minor M12
+
+$\begin{vmatrix}
+-3 & 1 & 1 \\
+1 & -3 & 1 \\
+1 & 1 & -3
+\end{vmatrix}$
+
+hasil = -32
+
+Minor M13
+
+$\begin{vmatrix}
+-3 & 1 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & -3
+\end{vmatrix}
+= 16$
+
+hasil = 16
+
+Minor M14
+
+$\begin{vmatrix}
+-3 & 1 & 1 \\
+1 & 1 & -3 \\
+1 & 1 & 1
+\end{vmatrix}$
+
+hasil = 16
+
+Langkah 3 : Substitusi ke rumus
+$\det(A)=(+1)(1)(16)+(−1)(−3)(−32)+(+1)(1)(16)+(−1)(1)(16)
+=16−96+16−16=−80$
+
+hasil akhirnya = $$\det(A) = -80$
+
+
+	​
+
+
+
+	​
+
+	​
 
 
 	​
