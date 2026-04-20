@@ -371,3 +371,10 @@ $\begin{bmatrix}
 -3 & 1
 \end{bmatrix}$
 
+# Soal determinan dan invers
+1. Hitunglah determinan matrik berikut dengan menggunakan rumus expansi baris
+$\sum_{k=1}^n (-1)^{i+k} a_{ik} M_{ik}$
+dengan $M_{ij}$ adalah minior dari matrik A dan
+$M_{ij} = \det A_{ij}.$
+$A_{ij}$ adalah submatrik dengan menghapus baris i dan kolom kolom j dari matrix $A_{mxn}$ dengan $1 \le i, j \le n$
+
