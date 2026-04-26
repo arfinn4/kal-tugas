@@ -403,23 +403,24 @@ $A^{-1} = \frac{1}{\det A} \operatorname{adj} A.$
 6.$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.$
 
 # jawaban 
-A
+# A
 1.Diketahui matriks: $A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
 
-hitung determinan menggunakan rumus ekspansi baris (baris pertama):
+## Langkah 1 : hitung determinan menggunakan rumus ekspansi baris (baris pertama)
 $\det(A) = \sum_{j=1}^{n} (-1)^{1+j} a_{1j} M_{1j}$
 
 Proses prosesnya :
 
 Ekspansi baris pertama: $\det(A) = (-7)\cdot M_{11} + (-1)^{1+2}(-5)\cdot M_{12}$
 
+## Langkah 2 : hitung setiap minor 
 1. Minor $M_{11}$
 Hapus baris 1 kolom 1: $M_{11} = [4] \;\Rightarrow\; \det = 4$
 
 2. Minor $M_{12}$
 Hapus baris 1 kolom 2: $M_{12} = [1] \;\Rightarrow\; \det = 1$
 
-Substitusi :
+## Langkah 3 : Substitusi ke rumus
 
 $\begin{aligned}
 \det(A) &= (-7)(4) - (-5)(1) \\
@@ -431,13 +432,13 @@ Hasilnya : $\det(A) = -23$
 
 2.Diketahui matriks : $A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
 
-Langkah 1: Rumus ekspansi baris pertama
+## Langkah 1: Rumus ekspansi baris pertama
 
 $\det(A) = \sum_{k=1}^{3} (-1)^{1+k} \, a_{1k} \, M_{1k}$
 
 Baris pertama: (0,2,−3)
 
-Langkah 2: Hitung setiap sukunya
+## Langkah 2: Hitung setiap sukunya
 
 Suku ke-1 (k = 1)
 $a^{11} = 0 \Rightarrow (-1)^{1+1} \cdot 0 \cdot M^{11} = 0$
@@ -468,7 +469,7 @@ $
 $
 (-1)^{1+3} \cdot (-3) \cdot 0 = 0$
 
-Langkah 3: Jumlahkan semua
+## Langkah 3: Jumlahkan semua
 
 $\det(A) = 0 - 2 + 0 = -2$
 
@@ -476,11 +477,11 @@ Hasilnya = $\det(A) = -2$
 
 3.Diketahui matriks : $A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.$
 
-Langkah 1: Rumus ekspansi baris pertama
+## Langkah 1: Rumus ekspansi baris pertama
 
 $\det(A) = \sum_{k=1}^{4} (-1)^{1+k} \, a_{1k} \, M_{1k}$
 
-Langkah 2: Hitung setiap minor
+## Langkah 2: Hitung setiap minor
 
 Minor M11
 Hapus baris 1 kolom 1:
@@ -525,14 +526,202 @@ $\begin{vmatrix}
 
 hasil = 16
 
-Langkah 3 : Substitusi ke rumus
+## Langkah 3 : Substitusi ke rumus
 $\det(A)=(+1)(1)(16)+(−1)(−3)(−32)+(+1)(1)(16)+(−1)(1)(16)
 =16−96+16−16=−80$
 
-hasil akhirnya = $$\det(A) = -80$
+hasil akhirnya = $\det(A) = -80$
+
+# B
+4. Diketahui matriks: A = $\begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
+
+## Langkah 1 : hitung determinan
+
+$\det(A) = (-7)(4) - (-5)(1) = -28 + 5 = -23$
+
+## Langkah 2 : Cari matriks kofaktor
+
+$\operatorname{cof}(A) = \begin{pmatrix} 4 & -1 \\ 5 & -7 \end{pmatrix}$
+
+## Langkah 3 : Adjoin (transpose kofaktor)
+
+$\operatorname{adj}(A) = \begin{pmatrix} 4 & 5 \\ -1 & -7 \end{pmatrix}$
+
+## Langkah 4 : Hitung invers
+
+$A^{-1} = \frac{1}{\det(A)} \cdot \operatorname{adj}(A) = \frac{1}{-23}
+\begin{pmatrix}
+4 & 5 \\
+-1 & -7
+\end{pmatrix}$
+
+hasil akhirnya :
+
+$A^{-1} =
+\begin{pmatrix}
+-\frac{4}{23} & -\frac{5}{23} \\
+\frac{1}{23} & \frac{7}{23}
+\end{pmatrix}$
+
+5.Diketahui matriks: $A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
+
+## Langkah 1: Determinan
+gunakan ekspansi baris pertama :
+
+$\det(A) = 0 \cdot C_{11} + 2 \cdot C_{12} + (-3) \cdot C_{13}$
+
+Hitung minor:
+
+$\begin M_{12} =
+    \begin{vmatrix}
+    1 & -1 \\
+    0 & 1
+    \end{vmatrix}
+    = 1
+    
+    M_{13} =
+    \begin{vmatrix}
+    1 & -2 \\
+    0 & 0
+    \end{vmatrix}
+    = 0$
+
+Kofaktor:
+
+$\begin \[C_{12} = (-1)^{1+2} M_{12} = -1\]
+    
+        \[C_{13} = (-1)^{1+3} M_{13} = 0\]
+\end$
+
+Maka :
+
+$\det(A) = 2(-1) + (-3)(0) = -2$
+
+## Langkah 2 : Matriks Kofaktor
+hitung semua kofaktor :
+
+$C =
+\begin{pmatrix}
+-2 & -1 & 0 \\
+-2 & 0 & 0 \\
+-8 & 3 & -2
+\end{pmatrix}$
+
+## Langkah 3 : Adjoin (transpose kofaktor)
+
+$\operatorname{adj}(A) = C^T =
+\begin{pmatrix}
+-2 & -2 & -8 \\
+-1 & 0 & 3 \\
+0 & 0 & -2
+\end{pmatrix}$
+
+## Langkah 4 : invers
+$A^{-1} = \frac{1}{\det(A)} \operatorname{adj}(A)
+= -\frac{1}{2}
+\begin{pmatrix}
+-2 & -2 & -8 \\
+-1 & 0 & 3 \\
+0 & 0 & -2
+\end{pmatrix}
+
+hasil :
+A^{-1} =
+\begin{pmatrix}
+1 & 1 & 4 \\
+\frac{1}{2} & 0 & -\frac{3}{2} \\
+0 & 0 & 1
+\end{pmatrix}$
+
+6.diketahui matriks : $A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.$
+
+## LANGKAH 1: HITUNG DETERMINAN
+
+Diketahui matriks:
+
+$A =
+\begin{pmatrix}
+1 & -3 & 1 & 1 \\
+-3 & 1 & -3 & 1 \\
+1 & 1 & -3 & 1 \\
+1 & 1 & 1 & -3
+\end{pmatrix}$
+
+${Rumus Invers}$
+$A^{-1} = \frac{1}{\det(A)} \, \text{adj}(A)$
+
+Ekspansi baris pertama:
+
+$\det(A) = 1C_{11} - (-3)C_{12} + 1C_{13} + 1C_{14}$
+
+Contoh perhitungan minor:
+
+$M_{11} =
+\begin{pmatrix}
+1 & -3 & 1 \\
+1 & -3 & 1 \\
+1 & 1 & -3
+\end{pmatrix}$
+
+$\det(M_{11}) =
+1((-3)(-3) - (1)(1))
+- (-3)(1(-3) - 1(1))
++ 1(1(1) - (-3)(1))$
+
+$
+= 8 - 12 + 4 = 0
+$
+
+$
+C_{11} = (+)0 = 0
+$
+
+Determinannya:
+
+$\det(A) = -128$
+
+## Langkah 2: Matriks Kofaktor
+
+$C_{ij} = (-1)^{i+j} M_{ij}$
+
+Hasil matriks kofaktor:
+
+$C =
+\begin{pmatrix}
+-32 & -16 & -16 & -16 \\
+-16 & -32 & -16 & -16 \\
+-16 & -16 & -32 & -16 \\
+-16 & -16 & -16 & -32
+\end{pmatrix}$
+
+## Langkah 3: Adjoin
+
+$\text{adj}(A) = C^T$
+
+Karena simetris:
+
+$\text{adj}(A) =
+\begin{pmatrix}
+-32 & -16 & -16 & -16 \\
+-16 & -32 & -16 & -16 \\
+-16 & -16 & -32 & -16 \\
+-16 & -16 & -16 & -32
+\end{pmatrix}$
+
+## Langkah 4: Invers Matriks
+
+$A^{-1} = \frac{1}{-128} \cdot \text{adj}(A)$
+
+$A^{-1} =
+\begin{pmatrix}
+\frac{1}{4} & \frac{1}{8} & \frac{1}{8} & \frac{1}{8} \\
+\frac{1}{8} & \frac{1}{4} & \frac{1}{8} & \frac{1}{8} \\
+\frac{1}{8} & \frac{1}{8} & \frac{1}{4} & \frac{1}{8} \\
+\frac{1}{8} & \frac{1}{8} & \frac{1}{8} & \frac{1}{4}
+\end{pmatrix}
+%
 
 
-	​
 
 
 
