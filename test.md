@@ -722,7 +722,138 @@ $A^{-1} =
 \end{pmatrix}
 %
 
+Contoh matriks :
+A =\begin{bmatrix}
+4 & 1 & 0 \\
+1 & 4 & 1 \\
+0 & 1 & 4
+\end{bmatrix}$
 
+# 1. Mencari Eigenvalue
+Gunakan persamaan:
+
+$\det(A-\lambda I)=0$
+Maka:
+
+$\begin{vmatrix}
+4-\lambda & 1 & 0\\
+1 & 4-\lambda & 1\\
+0 & 1 & 4-\lambda
+\end{vmatrix}=0$
+
+Hitung determinan:
+
+$(4-\lambda)\left[(4-\lambda)^2-1\right]-(4-\lambda)=0$
+
+Sederhanakan:
+$(4-\lambda)\left[(4-\lambda)^2-2\right]=0$
+
+Sehingga diperoleh eigenvalue:
+
+$\lambda_1=4$
+
+$\lambda_2=4+\sqrt{2}$
+
+$\lambda_3=4-\sqrt{2}$
+
+# 2. Mencari Eigenvector
+
+Untuk $\lambda=4$
+Gunakan:
+
+$(A-4I)\vec{v}=0
+$
+
+$\begin{bmatrix}
+0 & 1 & 0\\
+1 & 0 & 1\\
+0 & 1 & 0
+\end{bmatrix}
+$
+$\begin{bmatrix}
+x\\
+y\\
+z
+\end{bmatrix}$
+=
+$\begin{bmatrix}
+0\\
+0\\
+0
+\end{bmatrix}$
+
+Diperoleh:
+
+$y=0$
+
+$x+z=0$
+
+Ambil:
+$x=1$
+
+maka:
+$z=-1$
+
+Eigenvector:
+
+$\vec{v}_1=
+\begin{bmatrix}
+1\\
+0\\
+-1
+\end{bmatrix}$
+
+Untuk $\lambda=4+\sqrt{2}$
+
+Eigenvector:
+
+$\vec{v}_2=
+\begin{bmatrix}
+1\\
+\sqrt{2}\\
+1
+\end{bmatrix}$
+
+Untuk $\lambda=4-\sqrt{2}$
+
+Eigenvector:
+
+$\vec{v}_3=
+\begin{bmatrix}
+1\\
+-\sqrt{2}\\
+1
+\end{bmatrix}$
+
+# 3. Hasil Akhir
+
+$\lambda_1=4,
+\quad
+\vec{v}_1=
+\begin{bmatrix}
+1\\
+0\\
+-1
+\end{bmatrix}$
+
+$\lambda_2=4+\sqrt{2},
+\quad
+\vec{v}_2=
+\begin{bmatrix}
+1\\
+\sqrt{2}\\
+1
+\end{bmatrix}$
+
+$\lambda_3=4-\sqrt{2},
+\quad
+\vec{v}_3=
+\begin{bmatrix}
+1\\
+-\sqrt{2}\\
+1
+\end{bmatrix}
+$
 
 
 
