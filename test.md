@@ -720,140 +720,128 @@ $A^{-1} =
 \frac{1}{8} & \frac{1}{8} & \frac{1}{4} & \frac{1}{8} \\
 \frac{1}{8} & \frac{1}{8} & \frac{1}{8} & \frac{1}{4}
 \end{pmatrix}
-%
+%$
 
-Contoh matriks :
-A =\begin{bmatrix}
-4 & 1 & 0 \\
-1 & 4 & 1 \\
-0 & 1 & 4
+Algoritma QR untuk Menghitung Eigenvalue dan Eigenvector
+Konsep Dasar Eigenvalue dan Eigenvector
+
+Jika terdapat matriks \(A\) dan vektor \(x\), maka:
+
+$Ax = \lambda x$
+
+Keterangan:
+$\begin{itemize}
+    \item \(A\) = matriks
+    \item \(x\) = eigenvector
+    \item \(\lambda\) = eigenvalue
+\end{itemize}$
+
+Artinya, setelah dikalikan matriks \(A\), arah vektor tetap sama tetapi skalanya berubah sebesar \(\lambda\). # Algoritma QR
+## Algoritma QR digunakan untuk mencari eigenvalue secara iteratif.
+
+# Langkah-Langkah Algoritma QR
+
+$%\begin{enumerate}
+    \item Faktorkan matriks:
+    
+    \[
+    A = QR
+    \]
+    
+    dengan:
+    \begin{itemize}
+        \item \(Q\) = matriks ortogonal
+        \item \(R\) = matriks segitiga atas
+    \end{itemize}
+
+    \item Bentuk matriks baru:
+    
+    \[
+    A_{k+1} = R_kQ_k
+    \]
+
+    \item Ulangi proses hingga matriks mendekati bentuk diagonal.
+\end{enumerate}$
+
+Diagonal matriks hasil iterasi akan mendekati eigenvalue.
+Matriks Contoh
+
+Matriks yang digunakan:
+
+$A=
+\begin{bmatrix}
+4 & 1 & -2 \\
+1 & 2 & 0 \\
+-2 & 0 & 3
 \end{bmatrix}$
 
-# 1. Mencari Eigenvalue
-Gunakan persamaan:
+# Penjelasan Program
 
-$\det(A-\lambda I)=0$
-Maka:
+Import Library
 
-$\begin{vmatrix}
-4-\lambda & 1 & 0\\
-1 & 4-\lambda & 1\\
-0 & 1 & 4-\lambda
-\end{vmatrix}=0$
+$\begin{verbatim}
+import numpy as np
+\end{verbatim}$
 
-Hitung determinan:
+Digunakan untuk operasi matriks dan linear algebra.
 
-$(4-\lambda)\left[(4-\lambda)^2-1\right]-(4-\lambda)=0$
+# Membuat Matriks
 
-Sederhanakan:
-$(4-\lambda)\left[(4-\lambda)^2-2\right]=0$
+$\begin{verbatim}
+A = np.array(...)
+\end{verbatim}$
 
-Sehingga diperoleh eigenvalue:
+Matriks yang akan dicari eigenvalue dan eigenvector-nya.
 
-$\lambda_1=4$
+# Dekomposisi QR
 
-$\lambda_2=4+\sqrt{2}$
+$\begin{verbatim}
+Q, R = np.linalg.qr(Ak)
+\end{verbatim}$
 
-$\lambda_3=4-\sqrt{2}$
+Memecah matriks menjadi:
+$A = QR$
 
-# 2. Mencari Eigenvector
+# Iterasi QR
 
-Untuk $\lambda=4$
-Gunakan:
+$\begin{verbatim}
+Ak = R @ Q
+\end{verbatim}$
 
-$(A-4I)\vec{v}=0
+Menggunakan rumus:
+$
+A_{k+1} = R_kQ_k
 $
 
-$\begin{bmatrix}
-0 & 1 & 0\\
-1 & 0 & 1\\
-0 & 1 & 0
-\end{bmatrix}
-$
-$\begin{bmatrix}
-x\\
-y\\
-z
-\end{bmatrix}$
-=
-$\begin{bmatrix}
-0\\
-0\\
-0
-\end{bmatrix}$
+# Mengambil Eigenvalue
 
-Diperoleh:
+$\begin{verbatim}
+np.diag(Ak)
+\end{verbatim}$
 
-$y=0$
+Diagonal matriks hasil iterasi digunakan sebagai aproksimasi eigenvalue.
 
-$x+z=0$
+# Menghitung Eigenvector
 
-Ambil:
-$x=1$
+$\begin{verbatim}
+np.linalg.eig(A)
+\end{verbatim}$
 
-maka:
-$z=-1$
+Digunakan untuk menghitung eigenvalue dan eigenvector asli.
 
-Eigenvector:
+Kesimpulan
+# Algoritma QR bekerja dengan:
+$\begin{enumerate}
+    \item Memfaktorkan matriks menjadi \(Q\) dan \(R\)
+    \item Mengalikan kembali menjadi \(RQ\)
+    \item Mengulang proses hingga matriks mendekati diagonal
+\end{enumerate}$
+Elemen diagonal matriks akhir merupakan aproksimasi eigenvalue.
 
-$\vec{v}_1=
-\begin{bmatrix}
-1\\
-0\\
--1
-\end{bmatrix}$
+# kode program :
+https://colab.research.google.com/drive/1dyMjjbmCTpjfnbPqlXr0h6QJtPVaUIMN?usp=sharing
 
-Untuk $\lambda=4+\sqrt{2}$
 
-Eigenvector:
-
-$\vec{v}_2=
-\begin{bmatrix}
-1\\
-\sqrt{2}\\
-1
-\end{bmatrix}$
-
-Untuk $\lambda=4-\sqrt{2}$
-
-Eigenvector:
-
-$\vec{v}_3=
-\begin{bmatrix}
-1\\
--\sqrt{2}\\
-1
-\end{bmatrix}$
-
-# 3. Hasil Akhir
-
-$\lambda_1=4,
-\quad
-\vec{v}_1=
-\begin{bmatrix}
-1\\
-0\\
--1
-\end{bmatrix}$
-
-$\lambda_2=4+\sqrt{2},
-\quad
-\vec{v}_2=
-\begin{bmatrix}
-1\\
-\sqrt{2}\\
-1
-\end{bmatrix}$
-
-$\lambda_3=4-\sqrt{2},
-\quad
-\vec{v}_3=
-\begin{bmatrix}
-1\\
--\sqrt{2}\\
-1
-\end{bmatrix}
-$
 
 
 
