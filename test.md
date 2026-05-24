@@ -831,11 +831,10 @@ Digunakan untuk menghitung eigenvalue dan eigenvector asli.
 
 Kesimpulan
 # Algoritma QR bekerja dengan:
-$\begin{enumerate}
+$
     \item Memfaktorkan matriks menjadi \(Q\) dan \(R\)
     \item Mengalikan kembali menjadi \(RQ\)
-    \item Mengulang proses hingga matriks mendekati diagonal
-\end{enumerate}$
+    \item Mengulang proses hingga matriks mendekati diagonal$
 Elemen diagonal matriks akhir merupakan aproksimasi eigenvalue.
 
 # kode program :
