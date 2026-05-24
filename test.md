@@ -778,35 +778,25 @@ $A=
 # Penjelasan Program
 
 Import Library
-
-$\begin{verbatim}
 import numpy as np
-\end{verbatim}$
-
 Digunakan untuk operasi matriks dan linear algebra.
 
 # Membuat Matriks
 
-$\begin{verbatim}
-A = np.array(...)
-\end{verbatim}$
+$
+A = np.array(...)$
 
 Matriks yang akan dicari eigenvalue dan eigenvector-nya.
 
 # Dekomposisi QR
 
-$\begin{verbatim}
-Q, R = np.linalg.qr(Ak)
-\end{verbatim}$
+$Q, R = np.linalg.qr(Ak)$
 
 Memecah matriks menjadi:
 $A = QR$
 
 # Iterasi QR
-
-$\begin{verbatim}
-Ak = R @ Q
-\end{verbatim}$
+Ak = R @ Q$
 
 Menggunakan rumus:
 $
@@ -814,28 +804,21 @@ A_{k+1} = R_kQ_k
 $
 
 # Mengambil Eigenvalue
-
-$\begin{verbatim}
-np.diag(Ak)
-\end{verbatim}$
+np.diag(Ak)$
 
 Diagonal matriks hasil iterasi digunakan sebagai aproksimasi eigenvalue.
 
 # Menghitung Eigenvector
-
-$\begin{verbatim}
-np.linalg.eig(A)
-\end{verbatim}$
+$np.linalg.eig(A)$
 
 Digunakan untuk menghitung eigenvalue dan eigenvector asli.
 
 Kesimpulan
 # Algoritma QR bekerja dengan:
-$
-    \item Memfaktorkan matriks menjadi \(Q\) dan \(R\)
-    \item Mengalikan kembali menjadi \(RQ\)
-    \item Mengulang proses hingga matriks mendekati diagonal$
-Elemen diagonal matriks akhir merupakan aproksimasi eigenvalue.
+$Memfaktorkan matriks menjadi \(Q\) dan \(R\)
+Mengalikan kembali menjadi \(RQ\)
+Mengulang proses hingga matriks mendekati diagonal$
+Elemen diagonal matriks akhir merupakan aproksimasi eigenvalue
 
 # kode program :
 https://colab.research.google.com/drive/1dyMjjbmCTpjfnbPqlXr0h6QJtPVaUIMN?usp=sharing
