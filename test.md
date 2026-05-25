@@ -634,7 +634,7 @@ A^{-1} =
 \end{pmatrix}$
 
 6.diketahui matriks : 
-$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}
+$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}$
 
 ## LANGKAH 1: HITUNG DETERMINAN
 
