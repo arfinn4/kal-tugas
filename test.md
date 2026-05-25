@@ -820,10 +820,6 @@ Mengalikan kembali menjadi \(RQ\)
 Mengulang proses hingga matriks mendekati diagonal$
 Elemen diagonal matriks akhir merupakan aproksimasi eigenvalue
 
-# kode program :
-https://colab.research.google.com/drive/1dyMjjbmCTpjfnbPqlXr0h6QJtPVaUIMN?usp=sharing
-
-https://colab.research.google.com/drive/1gXZrZ2AIJgGnSH1pqF_2KekDbTxFUezC?usp=sharing
 
 
 
