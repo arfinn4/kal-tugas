@@ -2,7 +2,9 @@
 # 1. Apa yang dimaksud persaamaan linear
 persamaan Linear adalah salah satu persamaan dari ilmu aljabar di mana persamaan ini sukunya mengandung konstanta dengan variabel tunggal
 
-# 2. buat dua persamaan linear dengan dua variable
+# 2. buat dua persamaan linear dengan dua 
+x−y=1
+2x+3y=12
 ![alt text](image-1.png)
 
 # Persamaan Linier
