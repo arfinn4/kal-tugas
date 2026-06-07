@@ -1,41 +1,39 @@
-# persamaan linear
-# 1. Apa yang dimaksud persaamaan linear
-persamaan Linear adalah salah satu persamaan dari ilmu aljabar di mana persamaan ini sukunya mengandung konstanta dengan variabel tunggal
+# 1. Pengertian Persamaan Linear
+Persamaan linear merupakan salah satu bentuk persamaan dalam aljabar yang setiap sukunya terdiri dari konstanta atau hasil kali konstanta dengan satu variabel berpangkat satu.
+
+Disebut linear karena hubungan antar variabelnya dapat digambarkan sebagai garis lurus pada bidang koordinat Kartesius. Dalam sistem ini, setiap titik dinyatakan dengan pasangan bilangan (x, y) yang menunjukkan posisi tertentu.
+
+# 2. Karakteristik Persamaan Linear
+Berikut beberapa ciri dari persamaan linear:
+
+Variabel memiliki pangkat satu.
+
+Tidak terdapat perkalian antar variabel.
+
+Memiliki dua ruas yang dihubungkan dengan tanda sama dengan (=).
+
+Operasi pada kedua ruas tidak mengubah nilai persamaan.
+
+# 3. Unsur-Unsur Persamaan Linear
+## 3.1 Variabel
+Variabel adalah simbol yang menyatakan nilai yang belum diketahui, biasanya berupa huruf seperti x, y, atau z.
+
+## 3.2 Koefisien
+Koefisien adalah bilangan yang berada di depan variabel.
+Contoh: pada 4x, angka 4 adalah koefisien.
+
+## 3.3 Konstanta
+Konstanta adalah bilangan tetap yang tidak diikuti variabel.
+Contoh: pada 3x + 6, angka 6 adalah konstanta.
+
+## 3.4 Suku
+Suku adalah bagian-bagian dari suatu persamaan.
+Contoh: pada 5x - y + 2, suku-sukunya adalah 5x, -y, dan 2.
 
 # 2. buat dua persamaan linear dengan dua 
 x−y=1
 2x+3y=12
 ![alt text](image-1.png)
-
-# Persamaan Linier
-Persamaan Linier adalah salah satu persamaan dari ilmu aljabar dimana persamaan ini sukunya mengandung konstanta dengan variabel tunggal. Mengapa disebut linier, karena hubungan matematis ini digambarkan dengan garis lurus dalam sistem koordinat kartesius
-
-# Sifat Persamaan Linier
-- Persamaan linier memiliki beberapa sifat, yaitu:
-- Penjumlahan dan pengurangan bilangan kedua ruas tidak akan mengubah persamaan nilai.
-- Perkalian dan pembagian bilangan kedua ruas tidak mengubah nilai persamaan.
-- Nilai persamaan tidak berubah jika kedua ruas ditambah atau dikurangi bilangan yang sama.
-- Suatu persamaan jika dipindah ruas maka penjumlahan berubah jadi pengurangan, perkalian berubah menjadi pembagian, dan sebaliknya
-
-# Jenis-Jenis Persamaan Linier
-## Persamaan Linier Satu Variabel
-Persamaan linier satu variabel hanya mengandung satu variabel berpangkat satu yang berpentuk kalimat terbuka dengan dihubungkan tanda =.
-Kalimat terbuka di sini berarti adalah kalimat yang belum tahu kebenaranya atau bisa jadi benar, bisa jadi juga salah.
-Bentuk umum dari persamaan Linear Satu Variabel: 
-
-$ax + b = 0$
-
-keterangan:
-a = koefisien
-b = konstanta
-x = variabel
-a dan b adalah bilangan riil
-a dan b bukan nol
-Namun, yang perlu digaris bawahi adalah variabel tidak selalu menggunakan lambang x, bisa jadi menggunakan y atau yang lainnya
-
-$$10x + 2 = 22 \quad x = \frac{22-2}{10} \quad x = 2$$
-Maka nilai dari huruf x adalah 2
-
 
 # Persamaan Linier Dua Variabel
 Sesuai dengan namanya, Persamaan Linear Dua Variabel merupakan sistem persamaan dengan variabel yang berjumlah dua dengan berpangkat 1. Persamaan linear dua variabel menggunakan relasi = dan tidak ada perkalian variabel di setiap persamaan.
